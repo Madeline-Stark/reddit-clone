@@ -1,0 +1,6 @@
+<h1><%= @post.title %></h1>
+<%= @post.content %>
+by: <%= @post.user.user_name %>
+
+<%= link_to "Edit #{@post.title}", edit_post_path(@post) %>
+
